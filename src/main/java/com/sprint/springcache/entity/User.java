@@ -2,7 +2,6 @@ package com.sprint.springcache.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -13,5 +12,4 @@ public class User {
   private String name;
   private String email;
   private int age;
-
 }

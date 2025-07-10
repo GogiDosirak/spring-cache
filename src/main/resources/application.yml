@@ -2,3 +2,17 @@ logging:
   level:
     org.springframework.cache: TRACE
     com.example: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,caches
+  endpoint:
+    health:
+       show-details: always
+    caches:
+      enabled: true
+    metrics:
+      export:
+        simple:
+          enabled: true
