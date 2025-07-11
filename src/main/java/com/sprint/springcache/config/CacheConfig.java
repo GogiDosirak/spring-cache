@@ -21,7 +21,7 @@ public class CacheConfig {
         .maximumSize(1000)
         .expireAfterWrite(30, TimeUnit.MINUTES)
         .expireAfterAccess(20, TimeUnit.MINUTES)
-        .recordStats()
+        .recordStats() // 통계자료 수집 -> actuator에서 캐시 통계 조회가능
     );
     return cacheManager;
   }
