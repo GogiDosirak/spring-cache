@@ -7,6 +7,7 @@ import org.springframework.cache.CacheManager;
 import org.springframework.cache.caffeine.CaffeineCache;
 import org.springframework.context.annotation.Configuration;
 
+// Prometheus로 메트릭을 scrape하기 위함
 @Configuration
 public class CacheMetricsConfig {
   private final CacheManager cacheManager;
